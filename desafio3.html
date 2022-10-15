@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio condiciones</title>
+    <script src="https://kit.fontawesome.com/84e259f3aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="desf3">
+    <h1>Desafío parte 3</h1>
+
+<section class="sect3">
+    <div class="next">
+        <a href="./desafio2.html"><i class="fa-solid fa-angles-left"></i></a>
+        <p>Ir al desafio</p>
+        <p>Parte 2</p>
+    </div>
+    <div class="password">
+        <h2>Ingresa el password</h2>
+        <div class="select">
+            <select name="cantidad1" id="cantd1" class="cantd3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <select name="cantidad1" id="cantd2" class="cantd3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <select name="cantidad1" id="cantd3" class="cantd3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <button type="button" class="btn2" id="btn" onclick="
+        
+        var inputCantd1 = document.querySelector('#cantd1').value;
+        var inputCantd2 = document.querySelector('#cantd2').value;
+        var inputCantd3 = document.querySelector('#cantd3').value;
+        var total = inputCantd1 + inputCantd2 + inputCantd3;
+        var msj3 = document.querySelector('#msj3')
+    
+
+        if(total == 911){
+            msj3.innerHTML = ('*Password 1 correcta*');
+            msj3.style.color = 'rgb(23, 219, 66)'
+        }
+        else if(total == 714){
+            msj3.innerHTML = ('*Password 2 correcta*');
+            msj3.style.color = 'rgb(23, 219, 66)'
+        }
+        else{
+            msj3.innerHTML = ('*Password incorrecto*');
+            msj3.style.color = 'red'
+        }
+            
+        
+        ">Ingresar</button>
+
+        <h2 id="msj3"></h2>
+
+    </div>
+    <div class="next">
+        <a href="./index.html"><i class="fa-solid fa-angles-right"></i></a>
+        <p>Ir al desafio</p>
+        <p>Parte 1</p>
+    </div>
+    
+</section>
+</body>
+
+</html>

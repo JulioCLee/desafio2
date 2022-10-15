@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio condiciones</title>
+    <script src="https://kit.fontawesome.com/84e259f3aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="desf1">
+    <h1>Desafío parte 1</h1>
+    <h2>Click en la imagen para agregar borde rojo</h2>
+
+    <div class="imagen">
+
+        <div class="next">
+            <a href="./desafio3.html"><i class="fa-solid fa-angles-left"></i></a>
+            <p>Ir al desafio</p>
+            <p>Parte 3</p>
+        </div>
+
+
+        <img class="img" src="./assets/img/primerdesafio.jpg" alt="primerdesafio" id="imgClick" onclick="
+
+            var click = document.querySelector('#imgClick');
+
+            if(click){
+                click.classList.toggle('red');
+            }
+        ">
+
+        <div class="next">
+            <a href="./desafio2.html"><i class="fa-solid fa-angles-right"></i></a>
+            <p>Ir al desafio</p>
+            <p>Parte 2</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

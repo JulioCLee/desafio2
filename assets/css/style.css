@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.desf1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/desaf1.jpg);
+    background-position: 0;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-size: 4em ;
+    color: rgb(26, 69, 94);
+    margin-top: 20px;
+}
+
+h2{
+    margin-top: 16px;
+}
+
+.imagen{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;   
+}
+
+.img{
+    width: 454px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px 1px rgb(158, 158, 158);
+
+}
+
+.red{
+    border: 2px solid red;
+    width: 450px
+}
+
+.reiniciar{
+    font-size: 2em;
+}
+
+.imagen a, .verificar a, .sect3 a, .reiniciar{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.imagen i, .verificar i, .sect3 i{
+    font-size: 3em;
+    color: rgb(26, 69, 94);
+}
+
+/* ---------------------- parte del desafio 2 --------------------------- */
+
+.titulo{
+    font-size: 2em;
+    margin: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sec-2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/fondo.png);
+}
+
+.part1 img{
+    width: 50%;
+    margin-bottom: 26px;
+    box-shadow: 2px 2px 10px 1px rgb(158, 158, 158);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.part1 img:hover{
+    width: 55%;
+}
+
+.desf2{
+    display: flex;
+    justify-self: center;
+    margin-bottom: 36px;
+}
+
+.part1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part1 .cantidades{
+    border: 1px solid grey;
+    width: 50px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 2px 0;
+}
+
+
+.btn{
+    margin: 2em 1em;
+    padding: 4px 24px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(69, 115, 141);
+    color: white;
+    cursor: pointer;
+    transition: 0.5;
+    font-size: 24px;
+}
+
+.btn:hover{
+    background-color: rgb(43, 80, 102);
+}
+
+.verificar{
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.next{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px 16px;
+}
+
+/* ---------------------- parte del desafio 3 --------------------------- */
+.desf3{
+    background-image: url(../img/fondo2.jpg);
+    background-color: rgb(0, 0, 0);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.desf3, .password{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.sect3{
+
+    display: flex;
+    align-items: center;
+}
+
+.password{
+    margin-top: 26px;
+    border: 1px solid black;
+    width: 350px;
+    height: 300px;
+    box-shadow: 4px 4px 10px 0px rgb(158, 158, 158);
+    background-color: white;
+}
+
+.select{
+    margin-top: 16px;
+}
+
+.cantd3{
+    width: 60px;
+    background-color: rgb(241, 241, 241);
+}
+
+.btn2{
+    cursor: pointer;
+    margin-top: 60px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    padding: 2px 6px;
+    border: 1px solid grey;
+}
+
+.btn2:hover{
+    box-shadow: 3px 3px 8px 0px rgb(201, 201, 201);
+}

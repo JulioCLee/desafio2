@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio condiciones</title>
+    <script src="https://kit.fontawesome.com/84e259f3aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="sec-2">
+    <h1>Desafío parte 2</h1>
+    <p class="titulo">
+        Solo Puedes llevar hasta 10 stickers en total
+    </p>
+    <div class="desf2">
+        <div class="part1">
+            <img src="./assets/img/part1.png" alt="part1" id="prueba">
+            <span>Ingresa cantidad</span>
+            <input type="number" id="cant1" class="cantidades" name="cantidad" value="" placeholder="Cant">
+        </div>
+        <div class="part1">
+            <img src="./assets/img/part2.png" alt="part2">
+            <span>Ingresa cantidad</span>
+            <input type="number" id="cant2" class="cantidades" name="cantidad" value="" placeholder="Cant">
+            
+        </div>
+        <div class="part1">
+            <img src="./assets/img/part3.png" alt="part3">
+            <span>Ingresa cantidad</span>
+            <input type="number" id="cant3" class="cantidades" name="cantidad" value="" placeholder="Cant">
+        </div>
+    </div>
+
+    <p id="limite"></p>  
+
+    <section class="verificar">
+        <div class="next">
+            <a href="./index.html"><i class="fa-solid fa-angles-left"></i></a>
+            <p>Ir al desafio</p>
+            <p>Parte 1</p>
+        </div>
+
+        <button type="button" class="btn" id="btn" onclick="
+              
+                
+                var cant1 = document.querySelector('#cant1')
+                var cant2 = document.querySelector('#cant2')
+                var cant3 = document.querySelector('#cant3')
+                var msj = document.querySelector('#limite')
+
+
+                sumaTotal = Number(cant1.value) + Number(cant2.value) + Number(cant3.value);
+                
+                
+                
+                if(sumaTotal == '0'){
+                    return alert('Elige una cantidad')}
+                    
+                else if(sumaTotal <= 10){
+                    msj.innerHTML = 'Puedes llevar los ' + sumaTotal + ' stickers'
+                    msj.style.color = 'black'
+                    msj.style.fontSize = '3em'
+                }
+                else{
+                    msj.innerHTML = ('Llevas demasiados stickers');
+                    msj.style.color = 'red'
+                    msj.style.fontSize = '3em'
+                }
+                
+                ">Verificar</button>
+
+                
+                <button type="button" class="btn" id="btn2" onclick="
+
+                document.location.reload();
+            
+                
+                ">Reiniciar</button>
+
+        <div class="next">
+            <a href="./desafio3.html"><i class="fa-solid fa-angles-right"></i></a>
+            <p>Ir al desafio</p>
+            <p>Parte 3</p>
+        </div>
+
+    </section>
+    
+
+</body>
+
+</html>
