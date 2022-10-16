@@ -27,8 +27,11 @@
 
             var click = document.querySelector('#imgClick');
 
-            if(click){
-                click.classList.toggle('red');
+            if(click.style.border === 'none'){
+                click.style.border = '2px red solid';
+            }
+            else{
+                click.style.border = 'none';
             }
         ">
 
